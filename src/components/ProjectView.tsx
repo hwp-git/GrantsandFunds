@@ -64,7 +64,7 @@ export function ProjectView({ project, programs, onUpdate }: Props) {
             <DeadlineChip deadline={target.deadline} note={target.deadlineNote} />
             <DilutionBadge dilutive={target.dilutive} note={target.equityNote} />
             <a className="link-btn" href={target.url} target="_blank" rel="noreferrer">
-              PA-25-303 ↗
+              {target.name.match(/PA-\d{2}-\d+/)?.[0] ?? 'Funding announcement'} ↗
             </a>
           </div>
         </div>

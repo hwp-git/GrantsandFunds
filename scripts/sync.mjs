@@ -30,7 +30,7 @@ const TODAY = new Date().toISOString().slice(0, 10)
 
 // Opportunity numbers already represented by curated seed entries — the API
 // would return these as duplicates.
-const CURATED_OPP_NUMBERS = new Set(['PA-25-303', 'PA-25-304'])
+const CURATED_OPP_NUMBERS = new Set(['PA-27-100', 'PA-25-303', 'PA-25-304'])
 
 // ── helpers ──────────────────────────────────────────────────────
 

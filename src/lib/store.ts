@@ -12,6 +12,27 @@ const DEFAULT_STATE: AppState = {
   project: DEFAULT_PROJECT,
 }
 
+/**
+ * Checklist and milestone definitions (labels, grouping) live in code and may
+ * change between releases; only the user's done-flags are theirs. Rebuild
+ * both from the current defaults, carrying done state over by item id.
+ */
+function mergeProject(stored: AppState['project']): AppState['project'] {
+  const doneChecklist = new Map(stored.checklist?.map((c) => [c.id, c.done]) ?? [])
+  const doneMilestones = new Map(stored.milestones?.map((m) => [m.id, m.done]) ?? [])
+  return {
+    checklist: DEFAULT_PROJECT.checklist.map((d) => ({
+      ...d,
+      done: doneChecklist.get(d.id) ?? d.done,
+    })),
+    milestones: DEFAULT_PROJECT.milestones.map((d) => ({
+      ...d,
+      done: doneMilestones.get(d.id) ?? d.done,
+    })),
+    log: stored.log ?? DEFAULT_PROJECT.log,
+  }
+}
+
 function load(): AppState {
   try {
     const raw = localStorage.getItem(KEY)
@@ -19,7 +40,7 @@ function load(): AppState {
     const parsed = JSON.parse(raw) as AppState
     return {
       programs: parsed.programs ?? DEFAULT_STATE.programs,
-      project: parsed.project ?? DEFAULT_STATE.project,
+      project: parsed.project ? mergeProject(parsed.project) : DEFAULT_STATE.project,
     }
   } catch {
     return DEFAULT_STATE

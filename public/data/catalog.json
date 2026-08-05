@@ -5,7 +5,7 @@
       "id": "nih-sbir-omnibus",
       "kind": "grant",
       "region": "US",
-      "name": "NIH SBIR Phase I (Omnibus, PA-25-303)",
+      "name": "NIH SBIR Phase I (PA-27-100)",
       "org": "National Institutes of Health",
       "description": "Small Business Innovation Research grant for early-stage R&D with commercial potential. Sleep/AI diagnostics fit NHLBI (National Center on Sleep Disorders Research) and NIBIB. This is the target program for SnapSleep AI.",
       "amount": {
@@ -27,7 +27,7 @@
         "medical devices",
         "sleep"
       ],
-      "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-303.html",
+      "url": "https://grants.nih.gov/grants/guide/pa-files/PA-27-100.html",
       "firstSeen": "2026-05-12",
       "source": "curated"
     },

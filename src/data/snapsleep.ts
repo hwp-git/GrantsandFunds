@@ -22,7 +22,7 @@ export const DEFAULT_PROJECT: ProjectState = {
     { id: 'orcid', group: 'Registrations', label: 'ORCID iD for PI, linked to eRA Commons', done: false },
 
     // Pre-submission strategy
-    { id: 'foa', group: 'Strategy', label: 'Confirm FOA (PA-25-303 Omnibus) & pick institute (NHLBI vs NIBIB)', done: false },
+    { id: 'foa', group: 'Strategy', label: 'Confirm FOA (PA-27-100) & pick institute (NHLBI vs NIBIB)', done: false },
     { id: 'po-contact', group: 'Strategy', label: 'Email program officer — pitch aims, confirm fit', done: false },
     { id: 'clinical-trial', group: 'Strategy', label: 'Determine clinical-trial status (human subjects study design)', done: false },
 
