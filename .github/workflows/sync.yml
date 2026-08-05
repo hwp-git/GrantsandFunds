@@ -1,0 +1,35 @@
+name: Daily source sync
+
+on:
+  schedule:
+    # 21:00 UTC = 05:00 Taipei — after US business hours, before the Taiwan day
+    - cron: '0 21 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run source sync
+        run: node scripts/sync.mjs
+
+      - name: Commit updated catalog
+        run: |
+          if git diff --quiet public/data/catalog.json; then
+            echo "Catalog unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/catalog.json
+          git commit -m "chore: daily catalog sync"
+          git push

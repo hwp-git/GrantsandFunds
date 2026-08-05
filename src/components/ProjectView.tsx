@@ -1,17 +1,20 @@
 import { useMemo, useState } from 'react'
-import type { LogEntry, ProjectState } from '../types'
-import { PROGRAMS } from '../data/programs'
+import type { LogEntry, Program, ProjectState } from '../types'
+import { SEED_PROGRAMS } from '../data/programs'
 import { SNAPSLEEP } from '../data/snapsleep'
 import { daysUntil, formatDate, urgency } from '../lib/format'
 import { DeadlineChip, DilutionBadge } from './Badges'
 
 interface Props {
   project: ProjectState
+  programs: Program[]
   onUpdate: (patch: Partial<ProjectState>) => void
 }
 
-export function ProjectView({ project, onUpdate }: Props) {
-  const target = PROGRAMS.find((p) => p.id === SNAPSLEEP.targetProgramId)!
+export function ProjectView({ project, programs, onUpdate }: Props) {
+  const target =
+    programs.find((p) => p.id === SNAPSLEEP.targetProgramId) ??
+    SEED_PROGRAMS.find((p) => p.id === SNAPSLEEP.targetProgramId)!
   const [newLog, setNewLog] = useState('')
 
   const doneCount = project.checklist.filter((c) => c.done).length

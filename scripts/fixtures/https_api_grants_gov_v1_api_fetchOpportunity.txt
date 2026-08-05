@@ -1,0 +1,1 @@
+{"data":{"synopsis":{"awardFloor":"150000","awardCeiling":"750000","synopsisDesc":"<p>Supports development and validation of <b>wearable and remote monitoring technologies</b> for sleep disorders, including AI-driven analysis of physiological signals.</p>"}}}

@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "sync": "node scripts/sync.mjs",
+    "sync:test": "node scripts/sync.mjs --fixtures scripts/fixtures",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },

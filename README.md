@@ -26,20 +26,33 @@ USD⇄TWD conversion, and whether the money is **dilutive (equity)** or
 **non-dilutive**. Taiwanese programs carry their official Chinese names
 (e.g. 台灣新創競技場, 小型企業創新研發計畫).
 
-## Hooking up real data later
+## Daily source sync
 
-The app is deliberately layered so live data can replace the seed data without
-touching the UI:
+`scripts/sync.mjs` pulls live opportunities and merges them into
+`public/data/catalog.json`, which the app fetches at runtime (falling back to
+the bundled seed in `src/data/catalog.seed.json` when unreachable):
 
-- `src/data/programs.ts` — the program catalog. Shaped like what a daily
-  source-sync job (Grants.gov / NIH Guide / 經濟部 / 國科會 / accelerator cohort
-  pages) would emit. Replace the static array with a fetch; `firstSeen` +
-  `LAST_SYNCED` drive the NEW badges and the "sources synced" indicator.
-- `src/lib/store.ts` — user state (pipeline stages, stars, checklist,
-  milestones, log) persisted to `localStorage`. Swap the load/save functions
-  for API calls to add a backend.
-- `src/lib/format.ts` — the indicative FX rate (`USD_TWD`) to replace with a
-  live rate.
+1. **Grants.gov Search2 API** (official, keyless) — sleep-related US federal
+   grants, enriched with award floors/ceilings from the detail endpoint.
+2. **Taiwan announcement pages** (sbir.org.tw, 經濟部 news) — HTML anchor scan
+   filtered by funding keywords, with Chinese/ROC-calendar deadline parsing.
 
-All amounts and deadlines in the seed data are modeled on the real programs
-but must be verified on the official pages before relying on them.
+Merge rules: curated seed entries always win on id collisions; each
+discovered item's `firstSeen` date is preserved across runs (this drives the
+NEW badges); items whose deadline has passed are dropped; a failing source
+keeps its previous items rather than wiping them.
+
+The GitHub Action `.github/workflows/sync.yml` runs the sync daily at 05:00
+Taipei time and commits the catalog when it changes. Note: GitHub only runs
+scheduled workflows on the repository's **default branch**. Run manually with:
+
+```bash
+npm run sync        # real fetch (needs open network — e.g. CI)
+npm run sync:test   # offline run against scripts/fixtures/
+```
+
+Auto-discovered amounts and deadlines come from the sources verbatim —
+verify on the official pages before relying on them. The user-state layer
+(`src/lib/store.ts`, localStorage) and the indicative FX rate
+(`src/lib/format.ts`) are the remaining pieces to move server-side if a
+backend is added.

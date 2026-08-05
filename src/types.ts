@@ -50,6 +50,8 @@ export interface Program {
   url: string
   /** Date this item was first picked up by the daily source sync */
   firstSeen: string
+  /** 'curated' for hand-maintained entries, else the sync source (e.g. 'grants.gov') */
+  source?: string
   /** For VC/accelerators: intro/contact status is tracked in user state */
 }
 

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { FundingKind, Region } from './types'
-import { LAST_SYNCED, PROGRAMS } from './data/programs'
+import { useCatalog } from './lib/catalog'
 import { useAppState } from './lib/store'
 import { daysUntil, formatDate, isNew, urgency } from './lib/format'
 import { DiscoverView } from './components/DiscoverView'
@@ -11,17 +11,18 @@ type View = 'discover' | 'pipeline' | 'project'
 
 export default function App() {
   const { state, getProgram, updateProgram, updateProject } = useAppState()
+  const { programs, lastSynced } = useCatalog()
   const [view, setView] = useState<View>('discover')
   const [kind, setKind] = useState<FundingKind>('grant')
   const [region, setRegion] = useState<Region>('US')
 
-  const newCount = PROGRAMS.filter((p) => isNew(p.firstSeen)).length
+  const newCount = programs.filter((p) => isNew(p.firstSeen)).length
 
   // Alert strip: upcoming deadlines within 45 days for tracked/starred items,
   // plus anything ≤14 days regardless of tracking.
   const alerts = useMemo(
     () =>
-      PROGRAMS.filter((p) => p.deadline)
+      programs.filter((p) => p.deadline)
         .map((p) => ({ p, days: daysUntil(p.deadline!) }))
         .filter(({ p, days }) => {
           if (days < 0) return false
@@ -29,7 +30,7 @@ export default function App() {
           return days <= 14 || (tracked && days <= 45)
         })
         .sort((a, b) => a.days - b.days),
-    [state.programs], // eslint-disable-line react-hooks/exhaustive-deps
+    [state.programs, programs], // eslint-disable-line react-hooks/exhaustive-deps
   )
 
   return (
@@ -56,7 +57,7 @@ export default function App() {
         </nav>
 
         <div className="sync-note" title="The daily sync job scans US & Taiwan sources and stamps new items">
-          Sources synced {formatDate(LAST_SYNCED.slice(0, 10))} · daily
+          Sources synced {formatDate(lastSynced.slice(0, 10))} · daily
         </div>
       </header>
 
@@ -92,7 +93,7 @@ export default function App() {
             </div>
           </div>
           <DiscoverView
-            programs={PROGRAMS}
+            programs={programs}
             kind={kind}
             region={region}
             getUserState={getProgram}
@@ -103,18 +104,20 @@ export default function App() {
 
       {view === 'pipeline' && (
         <PipelineView
-          programs={PROGRAMS}
+          programs={programs}
           getUserState={getProgram}
           onUpdate={updateProgram}
           onOpenProject={() => setView('project')}
         />
       )}
 
-      {view === 'project' && <ProjectView project={state.project} onUpdate={updateProject} />}
+      {view === 'project' && (
+        <ProjectView project={state.project} programs={programs} onUpdate={updateProject} />
+      )}
 
       <footer className="footer">
-        Demo data modeled on real programs — verify every deadline &amp; amount on the official pages.
-        FX shown at an indicative 1 USD ≈ 32.5 TWD.
+        Auto-discovered items come from Grants.gov and Taiwan government announcements —
+        verify every deadline &amp; amount on the official pages. FX shown at an indicative 1 USD ≈ 32.5 TWD.
       </footer>
     </div>
   )
