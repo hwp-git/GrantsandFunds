@@ -51,7 +51,7 @@ export default function App() {
             Pipeline
           </button>
           <button className={view === 'project' ? 'active' : ''} onClick={() => setView('project')}>
-            🌙 SnapSleep AI
+            SnapSleep AI
           </button>
         </nav>
 
@@ -62,7 +62,7 @@ export default function App() {
 
       {alerts.length > 0 && (
         <div className="alert-strip">
-          <span className="alert-title">⏰ Upcoming deadlines:</span>
+          <span className="alert-title">Upcoming deadlines:</span>
           {alerts.map(({ p, days }) => (
             <span key={p.id} className={`alert-chip u-${urgency(days)}`}>
               {p.name.split('(')[0].trim()} — {days === 0 ? 'today' : `${days}d`}
@@ -84,10 +84,10 @@ export default function App() {
             </div>
             <div className="toggle-group">
               <button className={region === 'US' ? 'active' : ''} onClick={() => setRegion('US')}>
-                🇺🇸 United States
+                United States
               </button>
               <button className={region === 'TW' ? 'active' : ''} onClick={() => setRegion('TW')}>
-                🇹🇼 Taiwan
+                Taiwan
               </button>
             </div>
           </div>

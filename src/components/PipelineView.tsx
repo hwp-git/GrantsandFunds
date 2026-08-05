@@ -40,13 +40,13 @@ export function PipelineView({ programs, getUserState, onUpdate, onOpenProject }
                   </div>
                   <div className="pipeline-card-meta">
                     <span className="tag">{p.kind === 'grant' ? 'Grant' : 'VC'}</span>
-                    <span className="tag">{p.region === 'US' ? '🇺🇸 US' : '🇹🇼 Taiwan'}</span>
+                    <span className="tag">{p.region === 'US' ? 'US' : 'Taiwan'}</span>
                   </div>
                   <div className="pipeline-card-badges">
                     <DeadlineChip deadline={p.deadline} note={p.deadlineNote} />
                     <DilutionBadge dilutive={p.dilutive} note={p.equityNote} />
                   </div>
-                  {us.contactStatus && <div className="pipeline-contact">📞 {us.contactStatus}</div>}
+                  {us.contactStatus && <div className="pipeline-contact">Contact: {us.contactStatus}</div>}
                   <div className="pipeline-card-actions">
                     <select
                       value={us.stage}
