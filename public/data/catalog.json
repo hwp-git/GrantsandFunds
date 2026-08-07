@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-08-07T10:45:42.212Z",
+  "lastSynced": "2026-08-07T21:34:05.725Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -425,13 +425,12 @@
         "service innovation",
         "software"
       ],
-      "url": "https://gcis.nat.gov.tw/neo-s/Web/default.aspx",
+      "url": "https://gcis.nat.gov.tw/neo-s/Web/Index.aspx",
       "firstSeen": "2026-08-04",
       "source": "curated",
       "deadlineConfidence": "estimated",
-      "linkStatus": "redirected",
-      "linkCheckedAt": "2026-08-07",
-      "linkFinalUrl": "https://gcis.nat.gov.tw/neo-s/Web/Index.aspx"
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "tta",
