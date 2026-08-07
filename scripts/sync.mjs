@@ -34,17 +34,50 @@ const CURATED_OPP_NUMBERS = new Set(['PA-27-100', 'PA-25-303', 'PA-25-304'])
 
 // ── helpers ──────────────────────────────────────────────────────
 
-async function getText(url, init) {
+/**
+ * Government sites (notably moea.gov.tw) reject requests without a browser
+ * User-Agent, so send a realistic one and accept HTML explicitly.
+ */
+const BROWSER_HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
+    '(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'zh-TW,zh;q=0.9,en;q=0.8',
+}
+
+async function getText(url, init = {}) {
   if (fixtureDir) {
     const name = url.replace(/[^a-z0-9]+/gi, '_').slice(0, 80) + '.txt'
     return readFileSync(resolve(fixtureDir, name), 'utf8')
   }
-  const res = await fetch(url, { signal: AbortSignal.timeout(30000), ...init })
-  if (!res.ok) throw new Error(`${url} → HTTP ${res.status}`)
-  return res.text()
+  let lastError
+  // Transient DNS/TLS failures against .tw hosts are common from CI; retry.
+  for (let attempt = 0; attempt < 3; attempt++) {
+    if (attempt) await new Promise((r) => setTimeout(r, 1500 * attempt))
+    try {
+      const res = await fetch(url, {
+        signal: AbortSignal.timeout(30000),
+        redirect: 'follow',
+        ...init,
+        headers: { ...BROWSER_HEADERS, ...(init.headers ?? {}) },
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      return res.text()
+    } catch (e) {
+      lastError = e
+    }
+  }
+  throw new Error(`${url} → ${lastError?.message ?? 'unknown error'}`)
 }
 
-const getJson = async (url, init) => JSON.parse(await getText(url, init))
+const getJson = async (url, init = {}) =>
+  JSON.parse(
+    await getText(url, {
+      ...init,
+      headers: { Accept: 'application/json', ...(init.headers ?? {}) },
+    }),
+  )
 
 /** "09/05/2026" → "2026-09-05" */
 function usDateToIso(d) {
@@ -67,7 +100,27 @@ const stripTags = (html) =>
 
 // ── source 1: Grants.gov ─────────────────────────────────────────
 
-const GRANTS_GOV_QUERIES = ['sleep apnea', 'sleep']
+const GRANTS_GOV_QUERIES = ['sleep apnea', 'sleep', 'SBIR sleep']
+
+/**
+ * Keyword search returns loosely-related results (a diabetes cohort study that
+ * merely mentions sleep). Keep only titles that are actually on-topic, or that
+ * are small-business vehicles we'd want to see regardless.
+ */
+const ON_TOPIC =
+  /sleep|apnea|apnoea|insomnia|circadian|somn|snor|airway|respirat|wearable|digital health|remote monitoring|medical device/i
+const SMALL_BUSINESS = /\b(SBIR|STTR|R4[123]|small business)\b/i
+
+/** R41–R44 are SBIR/STTR (companies); R01/P01/U01 are institutional research. */
+function eligibilityTag(number, title) {
+  if (/\bR4[1234]\b/.test(number) || SMALL_BUSINESS.test(`${number} ${title}`)) {
+    return 'small business eligible'
+  }
+  if (/\b(R01|P01|U01|R21|R35|K\d\d)\b/.test(`${number} ${title}`)) {
+    return 'institutional (not SBIR)'
+  }
+  return 'check eligibility'
+}
 
 async function fetchGrantsGov() {
   const hits = new Map() // oppNumber → hit
@@ -80,6 +133,7 @@ async function fetchGrantsGov() {
     })
     for (const hit of json?.data?.oppHits ?? []) {
       if (!hit.number || CURATED_OPP_NUMBERS.has(hit.number)) continue
+      if (!ON_TOPIC.test(hit.title ?? '') && !SMALL_BUSINESS.test(hit.title ?? '')) continue
       if (!hits.has(hit.number)) hits.set(hit.number, hit)
     }
   }
@@ -98,7 +152,7 @@ async function fetchGrantsGov() {
       deadlineNote: hit.oppStatus === 'forecasted' ? 'Forecasted — dates may change' : undefined,
       dilutive: false,
       equityNote: 'Non-dilutive federal grant',
-      focus: ['auto-discovered'],
+      focus: ['auto-discovered', eligibilityTag(hit.number, hit.title ?? '')],
       url: `https://www.grants.gov/search-results-detail/${hit.id}`,
       source: 'grants.gov',
     }
@@ -125,25 +179,49 @@ async function fetchGrantsGov() {
 
 // ── source 2: Taiwan announcement pages ──────────────────────────
 
+/** `pages` are tried in order until one responds; the rest are fallbacks. */
 const TW_SOURCES = [
   {
     source: 'sbir.org.tw',
     org: '經濟部中小及新創企業署 — SBIR',
-    page: 'https://www.sbir.org.tw/',
+    pages: [
+      'https://www.sbir.org.tw/announcements',
+      'https://www.sbir.org.tw/',
+      'https://sbir.org.tw/',
+    ],
     base: 'https://www.sbir.org.tw',
   },
   {
     source: 'moea.gov.tw',
     org: '經濟部 (MOEA)',
-    page: 'https://www.moea.gov.tw/MNS/populace/news/News.aspx?kind=1&menu_id=40',
+    pages: [
+      'https://www.moea.gov.tw/MNS/populace/news/News.aspx?kind=1&menu_id=40',
+      'https://www.moea.gov.tw/Mns/populace/news/News.aspx?kind=1&menu_id=40',
+    ],
     base: 'https://www.moea.gov.tw',
+  },
+  {
+    source: 'smes.moea.gov.tw',
+    org: '經濟部中小及新創企業署',
+    pages: ['https://www.smes.moea.gov.tw/', 'https://www.sme.gov.tw/'],
+    base: 'https://www.smes.moea.gov.tw',
   },
 ]
 
 const TW_KEYWORDS = /(SBIR|補助|徵案|申請|新創|研發計畫|公告|徵件)/
 
-async function fetchTaiwanSource({ source, org, page, base }) {
-  const html = await getText(page)
+async function fetchTaiwanSource({ source, org, pages, base }) {
+  let html, lastError
+  for (const page of pages) {
+    try {
+      html = await getText(page)
+      break
+    } catch (e) {
+      lastError = e
+    }
+  }
+  if (html == null) throw lastError ?? new Error(`${source}: no candidate URL responded`)
+
   const programs = []
   const seen = new Set()
   const anchorRe = /<a\s[^>]*href="([^"#]+)"[^>]*>([\s\S]*?)<\/a>/gi
