@@ -208,7 +208,13 @@ const TW_SOURCES = [
   },
 ]
 
-const TW_KEYWORDS = /(SBIR|補助|徵案|申請|新創|研發計畫|公告|徵件)/
+/** Announcements that represent an open call for applications. */
+const TW_KEYWORDS = /(SBIR|補助|徵案|徵件|徵求|申請|受理|開放報名|研發計畫)/
+/**
+ * …minus the ones that only report on a closed round: approved-recipient
+ * lists, selection results, info sessions, and press/outcome pieces.
+ */
+const TW_EXCLUDE = /(名單|核定|獲選|決審|花絮|成果發表|說明會|研討會|得獎|頒獎|報導)/
 
 async function fetchTaiwanSource({ source, org, pages, base }) {
   let html, lastError
@@ -228,8 +234,9 @@ async function fetchTaiwanSource({ source, org, pages, base }) {
   let m
   while ((m = anchorRe.exec(html)) && programs.length < 8) {
     const href = m[1]
-    const text = stripTags(m[2])
-    if (text.length < 10 || !TW_KEYWORDS.test(text)) continue
+    // Listings prefix each row with its publish date; that's not part of the title.
+    const text = stripTags(m[2]).replace(/^\d{4}[-/]\d{1,2}[-/]\d{1,2}\s*/, '')
+    if (text.length < 10 || !TW_KEYWORDS.test(text) || TW_EXCLUDE.test(text)) continue
     const url = href.startsWith('http') ? href : base + (href.startsWith('/') ? '' : '/') + href
     if (seen.has(url)) continue
     seen.add(url)
