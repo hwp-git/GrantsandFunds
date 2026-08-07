@@ -95,8 +95,20 @@ function zhDateToIso(text) {
   return `${year}-${String(m[2]).padStart(2, '0')}-${String(m[3]).padStart(2, '0')}`
 }
 
+const ENTITIES = {
+  nbsp: ' ', amp: '&', lt: '<', gt: '>', quot: '"',
+  rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', ndash: '–', mdash: '—', hellip: '…',
+}
+
+const decodeEntities = (s) =>
+  s
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/&([a-z]+);/gi, (m, name) => ENTITIES[name.toLowerCase()] ?? m)
+
 const stripTags = (html) =>
-  (html ?? '').replace(/<[^>]*>/g, ' ').replace(/&nbsp;|&amp;|&#\d+;/g, ' ').replace(/\s+/g, ' ').trim()
+  decodeEntities((html ?? '').replace(/<[^>]*>/g, ' '))
+    .replace(/\s+/g, ' ')
+    .trim()
 
 // ── source 1: Grants.gov ─────────────────────────────────────────
 
