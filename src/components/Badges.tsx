@@ -66,8 +66,21 @@ export function LinkStatusBadge({ program: p }: { program: Program }) {
       </span>
     )
   }
+  if (p.linkStatus === 'unverified') {
+    return (
+      <span
+        className="badge badge-link-unverified"
+        title={`The daily check couldn't reach this host (it may block automated traffic) — the page itself is probably fine. Last tried ${p.linkCheckedAt}.`}
+      >
+        Link unchecked
+      </span>
+    )
+  }
   return (
-    <span className="badge badge-link-broken" title={`Link did not resolve when checked ${p.linkCheckedAt}`}>
+    <span
+      className="badge badge-link-broken"
+      title={`The server returned an error for this URL when checked ${p.linkCheckedAt} — the page has likely moved or been removed.`}
+    >
       Link broken
     </span>
   )

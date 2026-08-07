@@ -58,8 +58,13 @@ export interface Program {
   firstSeen: string
   /** 'curated' for hand-maintained entries, else the sync source (e.g. 'grants.gov') */
   source?: string
-  /** Result of the sync's link check: HTTP reachability of `url` */
-  linkStatus?: 'ok' | 'redirected' | 'broken'
+  /**
+   * Result of the sync's link check. 'broken' means the server answered with
+   * an error (the page is genuinely gone); 'unverified' means we could not
+   * reach the host at all — common for .tw sites that block datacenter IPs —
+   * which is NOT evidence the page is dead.
+   */
+  linkStatus?: 'ok' | 'redirected' | 'broken' | 'unverified'
   /** Where `url` redirected to, when linkStatus is 'redirected' */
   linkFinalUrl?: string
   /** ISO date of the last link check */

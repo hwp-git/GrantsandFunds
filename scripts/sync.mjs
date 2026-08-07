@@ -297,6 +297,11 @@ async function checkLink(url) {
         headers: BROWSER_HEADERS,
       })
       if (res.status === 405 || res.status === 501) continue // HEAD unsupported
+      // Many .tw government/corporate sites reject datacenter traffic with
+      // 403/429 — that says nothing about whether the page exists.
+      if (res.status === 403 || res.status === 429) {
+        return { linkStatus: 'unverified', httpStatus: res.status }
+      }
       if (!res.ok) return { linkStatus: 'broken', httpStatus: res.status }
       const finalUrl = res.url && res.url !== url ? res.url : undefined
       // Ignore cosmetic redirects (trailing slash, http→https, www).
@@ -306,16 +311,18 @@ async function checkLink(url) {
         ? { linkStatus: 'redirected', linkFinalUrl: finalUrl }
         : { linkStatus: 'ok' }
     } catch (e) {
-      if (method === 'GET') return { linkStatus: 'broken', error: e.message }
+      // A connection/TLS/timeout failure means we could not reach the host —
+      // not evidence the page is gone. Never report that as broken.
+      if (method === 'GET') return { linkStatus: 'unverified', error: e.message }
     }
   }
-  return { linkStatus: 'broken' }
+  return { linkStatus: 'unverified' }
 }
 
 /** Check all links with bounded concurrency; annotate in place. */
 async function checkAllLinks(programs) {
   const queue = [...programs]
-  const summary = { ok: 0, redirected: 0, broken: 0 }
+  const summary = { ok: 0, redirected: 0, broken: 0, unverified: 0 }
   const broken = []
   const worker = async () => {
     while (queue.length) {
@@ -335,7 +342,10 @@ async function checkAllLinks(programs) {
     }
   }
   await Promise.all(Array.from({ length: 6 }, worker))
-  console.log(`Link check: ${summary.ok} ok, ${summary.redirected} redirected, ${summary.broken} broken`)
+  console.log(
+    `Link check: ${summary.ok} ok, ${summary.redirected} redirected, ` +
+      `${summary.broken} broken, ${summary.unverified} unreachable from CI`,
+  )
   if (broken.length) console.log(broken.join('\n'))
   return summary
 }
