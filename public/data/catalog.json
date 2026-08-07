@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-08-05T06:00:00Z",
+  "lastSynced": "2026-08-07T10:42:52.459Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -30,7 +30,9 @@
       "url": "https://grants.nih.gov/grants/guide/pa-files/PA-27-100.html",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "verified"
+      "deadlineConfidence": "verified",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "nih-sttr",
@@ -58,7 +60,9 @@
       "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "verified"
+      "deadlineConfidence": "verified",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "nsf-sbir",
@@ -86,7 +90,9 @@
       "url": "https://seedfund.nsf.gov/",
       "firstSeen": "2026-06-02",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "arpa-h-open-baa",
@@ -113,7 +119,9 @@
       ],
       "url": "https://arpa-h.gov/engage-and-transition/open-baa",
       "firstSeen": "2026-07-30",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "aasm-foundation",
@@ -140,7 +148,9 @@
       "url": "https://foundation.aasm.org/",
       "firstSeen": "2026-08-03",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "yc",
@@ -171,7 +181,9 @@
       "url": "https://www.ycombinator.com/apply",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "rock-health",
@@ -199,7 +211,9 @@
       ],
       "url": "https://rockhealth.com/capital/",
       "firstSeen": "2026-05-20",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "sosv-hax",
@@ -227,7 +241,9 @@
       ],
       "url": "https://hax.co/",
       "firstSeen": "2026-06-15",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "techstars-la-health",
@@ -257,7 +273,9 @@
       "url": "https://www.techstars.com/accelerators",
       "firstSeen": "2026-08-01",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "a16z-bio-health",
@@ -286,7 +304,9 @@
       ],
       "url": "https://a16z.com/bio-health/",
       "firstSeen": "2026-06-20",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "tw-sbir",
@@ -318,7 +338,9 @@
       "url": "https://www.sbir.org.tw/",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "nstc-fiti",
@@ -346,7 +368,9 @@
       "url": "https://fiti.stpi.narl.org.tw/",
       "firstSeen": "2026-07-31",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "tw-aplus",
@@ -374,7 +398,9 @@
       ],
       "url": "https://aiip.tdp.org.tw/",
       "firstSeen": "2026-06-10",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "tw-siir",
@@ -402,7 +428,10 @@
       "url": "https://gcis.nat.gov.tw/neo-s/Web/default.aspx",
       "firstSeen": "2026-08-04",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "redirected",
+      "linkCheckedAt": "2026-08-07",
+      "linkFinalUrl": "https://gcis.nat.gov.tw/neo-s/Web/Index.aspx"
     },
     {
       "id": "tta",
@@ -432,7 +461,9 @@
       "url": "https://www.taiwanarena.tech/",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "tss",
@@ -459,7 +490,9 @@
       ],
       "url": "https://www.startupstadium.tw/",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "appworks",
@@ -491,7 +524,9 @@
       "url": "https://appworks.tw/accelerator/",
       "firstSeen": "2026-06-25",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "hspectrum",
@@ -523,7 +558,9 @@
       "url": "https://www.hspectrum.org/",
       "firstSeen": "2026-08-02",
       "source": "curated",
-      "deadlineConfidence": "estimated"
+      "deadlineConfidence": "estimated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
     },
     {
       "id": "taiwania",
@@ -554,7 +591,240 @@
       ],
       "url": "https://www.taiwaniacapital.com/",
       "firstSeen": "2026-07-05",
-      "source": "curated"
+      "source": "curated",
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-RFA-MH-27-140",
+      "kind": "grant",
+      "region": "US",
+      "name": "Optimizing Behavioral Sleep Interventions for Adolescents and Young Adults (R34 Clinical Trial Required) (RFA-MH-27-140)",
+      "org": "National Institutes of Health",
+      "description": "NIMH seeks applications for pilot research to adapt, optimize, and test behavioral interventions that address common sleep problems in adolescents and young adults with or at risk for a mental health disorder. This notice of funding opportunity (NOFO) supports pilot clinical trials designed to ev…",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2026-10-22",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "check eligibility"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359159",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-PAR-24-330",
+      "kind": "grant",
+      "region": "US",
+      "name": "Interventions to Reduce Sleep Health Disparities (R01 - Clinical Trials Optional) (PAR-24-330)",
+      "org": "National Institutes of Health",
+      "description": "This PAR is being reissued in accordance with the simplified review criteria in effect for application due dates after January 25, 2025. The objective of this funding opportunity is to support non-pharmacological interventions to promote sleep health, reduce sleep health disparities, and examine …",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2027-09-07",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "institutional (not SBIR)"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/357572",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-RFA-FD-26-012",
+      "kind": "grant",
+      "region": "US",
+      "name": "Use of Digital Health Technologies in Clinical Investigations to Support Drug and Biological Product Development (U01) Clinical Trials Optional (RFA-FD-26-012)",
+      "org": "Food and Drug Administration",
+      "description": "The purpose of this Notice of Funding Opportunity (NOFO) is to address topics related to the use of digital health technologies (DHTs) for remote data acquisition in clinical investigations to support drug development.",
+      "amount": {
+        "max": 1100000,
+        "currency": "USD"
+      },
+      "deadline": "2026-08-20",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "institutional (not SBIR)"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/363255",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-FOR-CA-25-086",
+      "kind": "grant",
+      "region": "US",
+      "name": "Forecast to Publish a Notice of Funding Opportunity for SBIR Phase IIB Bridge Awards to Accelerate the Development of Cancer-Relevant Technologies Toward Commercialization (R44 Clinical Trial Optional) (FOR-CA-25-086)",
+      "org": "National Institutes of Health",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadlineNote": "Forecasted — dates may change",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359726",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-TEMP-30794",
+      "kind": "grant",
+      "region": "US",
+      "name": "NIEHS Worker Training Program&rsquo;s SBIR E-Learning for HAZMAT and Emergency Response (R43/R44 Clinical Trial Not Allowed) (TEMP-30794)",
+      "org": "National Institutes of Health",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadlineNote": "Forecasted — dates may change",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/358912",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-PA-27-101",
+      "kind": "grant",
+      "region": "US",
+      "name": "NIH Small Business Innovation Research (SBIR) Phase IIB Strategic Breakthrough Award (Parent [R44] Clinical Trial Optional) (PA-27-101)",
+      "org": "National Institutes of Health",
+      "description": "The NIH Phase IIB Strategic Breakthrough award bridges the funding gap between the end of a Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Phase II award and commercialization. The Phase IIB Strategic Breakthrough provides previously funded NIH SBIR or STT…",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2029-04-05",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359758",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-PAR-27-098",
+      "kind": "grant",
+      "region": "US",
+      "name": "SBIR/STTR Commercialization Readiness Pilot (CRP) Program (Parent SB1 Clinical Trial Optional) (PAR-27-098)",
+      "org": "National Institutes of Health",
+      "description": "The Commercialization Readiness Pilot (CRP) program helps small business concerns (SBCs) move NIH-funded SBIR or STTR projects from late-stage development to commercialization. The CRP supports later-stage research and development (R&D) and/or technical assistance that Phase II and Phase IIB Stra…",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2029-04-05",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359669",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-FOR-CA-25-087",
+      "kind": "grant",
+      "region": "US",
+      "name": "Forecast to Publish a Notice of Funding Opportunity for Small Business Transition Grant For Early Career Scientists (R41/R42 Clinical Trial Not Allowed) (FOR-CA-25-087)",
+      "org": "National Institutes of Health",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadlineNote": "Forecasted — dates may change",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359724",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-PAR-27-039",
+      "kind": "grant",
+      "region": "US",
+      "name": "Small Business Transition Grant for New Entrepreneurs (Parent R43/R44 Clinical Trial Optional) (PAR-27-039)",
+      "org": "National Institutes of Health",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadlineNote": "Forecasted — dates may change",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/362576",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
+    },
+    {
+      "id": "gg-PA-27-102",
+      "kind": "grant",
+      "region": "US",
+      "name": "NIH Small Business Technology Transfer Grant (Parent STTR [R41/R42] Clinical Trial Optional) (PA-27-102)",
+      "org": "National Institutes of Health",
+      "description": "The Small Business Technology Transfer (STTR) grant program helps United States small business concerns (SBCs) that partner with a nonprofit research institution bring scientific innovations to the marketplace. The STTR program supports feasibility studies to later stage research and development …",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2027-04-05",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359757",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-08-07"
     }
   ]
 }
