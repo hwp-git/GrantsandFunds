@@ -61,7 +61,7 @@ export function ProjectView({ project, programs, onUpdate }: Props) {
             <strong>Status:</strong> {SNAPSLEEP.status}
           </p>
           <div className="card-badges">
-            <DeadlineChip deadline={target.deadline} note={target.deadlineNote} />
+            <DeadlineChip deadline={target.deadline} note={target.deadlineNote} confidence={target.deadlineConfidence} />
             <DilutionBadge dilutive={target.dilutive} note={target.equityNote} />
             <a className="link-btn" href={target.url} target="_blank" rel="noreferrer">
               {target.name.match(/PA-\d{2}-\d+/)?.[0] ?? 'Funding announcement'} ↗

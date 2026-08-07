@@ -136,6 +136,14 @@ body {
 .badge-deadline-soon { color: var(--amber); border-color: currentColor; }
 .badge-deadline-critical { color: var(--red); border-color: currentColor; }
 .badge-deadline-overdue { color: var(--muted); text-decoration: line-through; }
+/* Unconfirmed estimate: deliberately quiet + dashed so it never reads as a
+   reliable countdown next to a verified date. */
+.badge-deadline-estimated {
+  color: var(--muted); border-style: dashed; border-color: var(--muted);
+  font-weight: 500; font-style: italic;
+}
+.badge-link-moved { border-color: var(--amber); color: var(--amber); }
+.badge-link-broken { border-color: var(--red); color: var(--red); }
 
 .card-facts { display: flex; gap: 28px; }
 .fact-label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); }

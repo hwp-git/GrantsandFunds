@@ -43,7 +43,7 @@ export function PipelineView({ programs, getUserState, onUpdate, onOpenProject }
                     <span className="tag">{p.region === 'US' ? 'US' : 'Taiwan'}</span>
                   </div>
                   <div className="pipeline-card-badges">
-                    <DeadlineChip deadline={p.deadline} note={p.deadlineNote} />
+                    <DeadlineChip deadline={p.deadline} note={p.deadlineNote} confidence={p.deadlineConfidence} />
                     <DilutionBadge dilutive={p.dilutive} note={p.equityNote} />
                   </div>
                   {us.contactStatus && <div className="pipeline-contact">Contact: {us.contactStatus}</div>}

@@ -19,10 +19,11 @@ export default function App() {
   const newCount = programs.filter((p) => isNew(p.firstSeen)).length
 
   // Alert strip: upcoming deadlines within 45 days for tracked/starred items,
-  // plus anything ≤14 days regardless of tracking.
+  // plus anything ≤14 days regardless of tracking. Estimated dates are
+  // excluded — an unconfirmed guess must never drive an urgency alert.
   const alerts = useMemo(
     () =>
-      programs.filter((p) => p.deadline)
+      programs.filter((p) => p.deadline && p.deadlineConfidence !== 'estimated')
         .map((p) => ({ p, days: daysUntil(p.deadline!) }))
         .filter(({ p, days }) => {
           if (days < 0) return false
@@ -116,8 +117,9 @@ export default function App() {
       )}
 
       <footer className="footer">
-        Auto-discovered items come from Grants.gov and Taiwan government announcements —
-        verify every deadline &amp; amount on the official pages. FX shown at an indicative 1 USD ≈ 32.5 TWD.
+        Dates marked <strong>“Est. … unconfirmed”</strong> are inferred from previous cycles and have
+        not been verified — always open the official page before planning around them. Links are
+        re-checked daily. FX shown at an indicative 1 USD ≈ 32.5 TWD.
       </footer>
     </div>
   )

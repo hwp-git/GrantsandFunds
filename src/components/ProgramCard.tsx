@@ -1,7 +1,7 @@
 import type { Program, PipelineStage, ProgramUserState } from '../types'
 import { PIPELINE_STAGES } from '../types'
 import { formatMoney, isNew } from '../lib/format'
-import { DeadlineChip, DilutionBadge, NewBadge } from './Badges'
+import { DeadlineChip, DilutionBadge, LinkStatusBadge, NewBadge } from './Badges'
 
 interface Props {
   program: Program
@@ -32,8 +32,9 @@ export function ProgramCard({ program: p, userState, onUpdate }: Props) {
 
       <div className="card-badges">
         {isNew(p.firstSeen) && <NewBadge />}
-        <DeadlineChip deadline={p.deadline} note={p.deadlineNote} />
+        <DeadlineChip deadline={p.deadline} note={p.deadlineNote} confidence={p.deadlineConfidence} />
         <DilutionBadge dilutive={p.dilutive} note={p.equityNote} />
+        <LinkStatusBadge program={p} />
       </div>
 
       <p className="card-desc">{p.description}</p>

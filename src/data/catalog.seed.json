@@ -29,7 +29,8 @@
       ],
       "url": "https://grants.nih.gov/grants/guide/pa-files/PA-27-100.html",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "verified"
     },
     {
       "id": "nih-sttr",
@@ -56,7 +57,8 @@
       ],
       "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "verified"
     },
     {
       "id": "nsf-sbir",
@@ -83,7 +85,8 @@
       ],
       "url": "https://seedfund.nsf.gov/",
       "firstSeen": "2026-06-02",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "arpa-h-open-baa",
@@ -136,7 +139,8 @@
       ],
       "url": "https://foundation.aasm.org/",
       "firstSeen": "2026-08-03",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "yc",
@@ -166,7 +170,8 @@
       ],
       "url": "https://www.ycombinator.com/apply",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "rock-health",
@@ -251,7 +256,8 @@
       ],
       "url": "https://www.techstars.com/accelerators",
       "firstSeen": "2026-08-01",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "a16z-bio-health",
@@ -311,7 +317,8 @@
       ],
       "url": "https://www.sbir.org.tw/",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "nstc-fiti",
@@ -338,7 +345,8 @@
       ],
       "url": "https://fiti.stpi.narl.org.tw/",
       "firstSeen": "2026-07-31",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "tw-aplus",
@@ -393,7 +401,8 @@
       ],
       "url": "https://gcis.nat.gov.tw/neo-s/Web/default.aspx",
       "firstSeen": "2026-08-04",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "tta",
@@ -422,7 +431,8 @@
       ],
       "url": "https://www.taiwanarena.tech/",
       "firstSeen": "2026-05-12",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "tss",
@@ -480,7 +490,8 @@
       ],
       "url": "https://appworks.tw/accelerator/",
       "firstSeen": "2026-06-25",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "hspectrum",
@@ -511,7 +522,8 @@
       ],
       "url": "https://www.hspectrum.org/",
       "firstSeen": "2026-08-02",
-      "source": "curated"
+      "source": "curated",
+      "deadlineConfidence": "estimated"
     },
     {
       "id": "taiwania",

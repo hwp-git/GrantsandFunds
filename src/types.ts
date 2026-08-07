@@ -42,6 +42,12 @@ export interface Program {
   /** ISO date of the next application deadline; undefined = rolling */
   deadline?: string
   deadlineNote?: string
+  /**
+   * 'verified' — taken from the official page or a published, recurring
+   * schedule. 'estimated' — inferred from past cycles and NOT confirmed; the
+   * UI must not present these as reliable countdowns.
+   */
+  deadlineConfidence?: 'verified' | 'estimated'
   /** Does taking this money dilute founder equity? */
   dilutive: boolean
   equityNote?: string
@@ -52,6 +58,12 @@ export interface Program {
   firstSeen: string
   /** 'curated' for hand-maintained entries, else the sync source (e.g. 'grants.gov') */
   source?: string
+  /** Result of the sync's link check: HTTP reachability of `url` */
+  linkStatus?: 'ok' | 'redirected' | 'broken'
+  /** Where `url` redirected to, when linkStatus is 'redirected' */
+  linkFinalUrl?: string
+  /** ISO date of the last link check */
+  linkCheckedAt?: string
   /** For VC/accelerators: intro/contact status is tracked in user state */
 }
 

@@ -278,6 +278,68 @@ function simpleHash(s) {
   return (h >>> 0).toString(36)
 }
 
+// ── link checking ────────────────────────────────────────────────
+
+/**
+ * Verify every program URL still resolves. Accelerator and government pages
+ * get reorganised constantly, so a stale link is the most common way this
+ * catalog goes wrong. HEAD first (cheap), falling back to GET for the many
+ * servers that reject HEAD.
+ */
+async function checkLink(url) {
+  if (fixtureDir) return { linkStatus: 'ok' }
+  for (const method of ['HEAD', 'GET']) {
+    try {
+      const res = await fetch(url, {
+        method,
+        redirect: 'follow',
+        signal: AbortSignal.timeout(20000),
+        headers: BROWSER_HEADERS,
+      })
+      if (res.status === 405 || res.status === 501) continue // HEAD unsupported
+      if (!res.ok) return { linkStatus: 'broken', httpStatus: res.status }
+      const finalUrl = res.url && res.url !== url ? res.url : undefined
+      // Ignore cosmetic redirects (trailing slash, http→https, www).
+      const normalize = (u) => u.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
+      const moved = finalUrl && normalize(finalUrl) !== normalize(url)
+      return moved
+        ? { linkStatus: 'redirected', linkFinalUrl: finalUrl }
+        : { linkStatus: 'ok' }
+    } catch (e) {
+      if (method === 'GET') return { linkStatus: 'broken', error: e.message }
+    }
+  }
+  return { linkStatus: 'broken' }
+}
+
+/** Check all links with bounded concurrency; annotate in place. */
+async function checkAllLinks(programs) {
+  const queue = [...programs]
+  const summary = { ok: 0, redirected: 0, broken: 0 }
+  const broken = []
+  const worker = async () => {
+    while (queue.length) {
+      const p = queue.shift()
+      const result = await checkLink(p.url)
+      p.linkStatus = result.linkStatus
+      p.linkCheckedAt = TODAY
+      if (result.linkFinalUrl) p.linkFinalUrl = result.linkFinalUrl
+      else delete p.linkFinalUrl
+      summary[result.linkStatus]++
+      if (result.linkStatus !== 'ok') {
+        broken.push(
+          `    ${result.linkStatus === 'broken' ? '✗' : '→'} ${p.name.slice(0, 48)} ` +
+            `(${result.httpStatus ?? result.error ?? result.linkFinalUrl ?? ''})`,
+        )
+      }
+    }
+  }
+  await Promise.all(Array.from({ length: 6 }, worker))
+  console.log(`Link check: ${summary.ok} ok, ${summary.redirected} redirected, ${summary.broken} broken`)
+  if (broken.length) console.log(broken.join('\n'))
+  return summary
+}
+
 // ── merge & write ────────────────────────────────────────────────
 
 async function main() {
@@ -319,6 +381,17 @@ async function main() {
     lastSynced: new Date().toISOString(),
     programs: [...seed.programs, ...byId.values()],
   }
+
+  // Carry forward the previous check result, then re-verify every link.
+  for (const p of catalog.programs) {
+    const prev = prevById.get(p.id)
+    if (prev?.linkStatus) {
+      p.linkStatus = prev.linkStatus
+      p.linkCheckedAt = prev.linkCheckedAt
+      if (prev.linkFinalUrl) p.linkFinalUrl = prev.linkFinalUrl
+    }
+  }
+  await checkAllLinks(catalog.programs)
 
   const changed =
     JSON.stringify(catalog.programs) !== JSON.stringify(previous.programs)
