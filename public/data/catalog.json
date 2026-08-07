@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-08-07T01:00:24.517Z",
+  "lastSynced": "2026-08-07T08:56:15.662Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -545,26 +545,6 @@
       "source": "curated"
     },
     {
-      "id": "gg-RFA-DK-27-112",
-      "kind": "grant",
-      "region": "US",
-      "name": "Single Source for the Continuation of the Epidemiology of Diabetes Interventions and Complications (EDIC) Study Research Center (Collaborative U01 Clinical Trial Not Allowed) (RFA-DK-27-112)",
-      "org": "National Institutes of Health",
-      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadlineNote": "Forecasted — dates may change",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/361213",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
       "id": "gg-RFA-MH-27-140",
       "kind": "grant",
       "region": "US",
@@ -578,29 +558,10 @@
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "check eligibility"
       ],
       "url": "https://www.grants.gov/search-results-detail/359159",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-AT-27-002",
-      "kind": "grant",
-      "region": "US",
-      "name": "Establishing a Research Network to Guide Foundational Research on Human Consciousness (RFA-AT-27-002)",
-      "org": "National Institutes of Health",
-      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadlineNote": "Forecasted — dates may change",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/362097",
       "source": "grants.gov",
       "firstSeen": "2026-08-05"
     },
@@ -618,292 +579,10 @@
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "institutional (not SBIR)"
       ],
       "url": "https://www.grants.gov/search-results-detail/357572",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-NOT-NS-24-061",
-      "kind": "grant",
-      "region": "US",
-      "name": "Notice of Intent to Publish a Funding Opportunity Announcement for Morris K. Udall Discovery Centers without Walls (DCWoW) for Parkinson's Disease Research (RM1 - Clinical Trial Optional) (NOT-NS-24-061)",
-      "org": "National Institutes of Health",
-      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadlineNote": "Forecasted — dates may change",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/356204",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-24-065",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Program Project Applications (P01 Clinical Trials Optional) (PAR-24-065)",
-      "org": "National Institutes of Health",
-      "description": "The National Heart, Lung, and Blood Institute (NHLBI) Program Project Grant (P01) supports research related to fundamental processes and diseases of the heart, blood and lymphatic vessels, lungs, and blood, including transfusion medicine, blood resources, and sleep disorders other programs includ…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2026-09-25",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/351057",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-281",
-      "kind": "grant",
-      "region": "US",
-      "name": "Mood and Psychosis Symptoms during the Menopause Transition (R01 Clinical Trial Optional) (PAR-25-281)",
-      "org": "National Institutes of Health",
-      "description": "The purpose of this Notice of Funding Opportunity (NOFO) is to advance translational research to better understand the emergence and worsening of mood and psychotic disorders (e.g., perimenopausal depression (PMD), generalized anxiety disorder, bipolar disorder and schizophrenia) during the menop…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2028-01-07",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/357341",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-282",
-      "kind": "grant",
-      "region": "US",
-      "name": "Mood and Psychosis Symptoms during the Menopause Transition (R21 Clinical Trial Optional) (PAR-25-282)",
-      "org": "National Institutes of Health",
-      "description": "The purpose of this Notice of Funding Opportunity (NOFO) is to advance translational research to better understand the emergence and worsening of mood and psychotic disorders (e.g., perimenopausal depression (PMD), generalized anxiety disorder, bipolar disorder and schizophrenia) during the menop…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2028-01-07",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/357342",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-025",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Early Phase Clinical Trials for Therapeutics and/or Diagnostics for HLBS Disorders (R33 CT Required) (PAR-25-025)",
-      "org": "National Institutes of Health",
-      "description": "The objective of this funding opportunity is to support investigator-initiated, phase I clinical trials for diagnostic and therapeutic interventions for heart, lung, blood, and sleep (HLBS) disorders in adults and children. The proposed trial can be single or multisite. Applicants applying for fu…",
-      "amount": {
-        "max": 1515000,
-        "currency": "USD"
-      },
-      "deadline": "2027-01-07",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/357542",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-026",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Early Phase Clinical Trials for Therapeutics and/or Diagnostics for HLBS Disorders (R61/R33 Clinical Trial Required) (PAR-25-026)",
-      "org": "National Institutes of Health",
-      "description": "The objective of this funding opportunity is to support investigator-initiated, Phase I clinical trials for diagnostic and therapeutic interventions for heart, lung, blood, and sleep (HLBS) disorders in adults and children. In addition to supporting clinical trial start-up and implementation acti…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2027-01-07",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/357543",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-032",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Clinical Trial Pilot Studies (R34 Clinical Trial Optional) (PAR-25-032)",
-      "org": "National Institutes of Health",
-      "description": "This Notice of Funding Opportunity Announcement (NOFO) intends to supports studies that are both necessary and sufficient to inform the planning of a Phase II-IV clinical trial within NHLBI's mission. The NHLBI expects that applications to this NOFO will describe the planned clinical trial and in…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2027-01-07",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/357800",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-HL-26-002",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Outstanding Investigator Award (OIA) (R35 Clinical Trial Optional) (RFA-HL-26-002)",
-      "org": "National Institutes of Health",
-      "description": "The purpose of the NHLBI Outstanding Investigator Award (OIA) is to promote scientific productivity and innovation by providing long-term support and increased flexibility to experienced Program Directors/Principal Investigators (PDs/PIs) who are currently PDs/PIs on at least two NHLBI R01-equiva…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2027-04-28",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/353821",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-HL-26-003",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI Emerging Investigator Award (EIA) (R35 Clinical Trial Optional) (RFA-HL-26-003)",
-      "org": "National Institutes of Health",
-      "description": "The purpose of the NHLBI Emerging Investigator Award (EIA) is to promote scientific productivity and innovation by providing long-term support and increased flexibility to experienced Program Directors/Principal Investigators (PDs/PIs) who are currently PDs/PIs on at least two NHLBI R01-equivalen…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2027-04-28",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/353822",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-25-447",
-      "kind": "grant",
-      "region": "US",
-      "name": "NHLBI TOPMed: Omics Phenotypes of Heart, Lung, and Blood Disorders (X01 - Clinical Trial Not Allowed) (PAR-25-447)",
-      "org": "National Institutes of Health",
-      "description": "This Notice of Funding Opportunity (NOFO) invites applications to use NHLBI-funded TransOmics for Precision Medicine (TOPMed) program to generate a large volume of integrated genetic and multi-omics data to facilitate discovery of the molecular mechanisms of Heart, Lung, Blood, and Sleep (HLBS) d…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2028-05-08",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/359942",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-NS-26-031",
-      "kind": "grant",
-      "region": "US",
-      "name": "Exposomic Contributions to ADRD Pathology and Resilience (RFA-NS-26-031)",
-      "org": "National Institutes of Health",
-      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadlineNote": "Forecasted — dates may change",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/361451",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-OD-27-005",
-      "kind": "grant",
-      "region": "US",
-      "name": "INCLUDE Project: Clinical Trials Phased Awards for Down syndrome Research (R61/R33 Clinical Trial Required) (RFA-OD-27-005)",
-      "org": "National Institutes of Health",
-      "description": "The NIH INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromE (INCLUDE) Project seeks to improve health and quality-of-life for individuals with Down syndrome. The purpose of this Notice of Funding Opportunity (NOFO) encourages Exploratory/Developmental Phased I…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2028-06-15",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/360655",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-OD-27-004",
-      "kind": "grant",
-      "region": "US",
-      "name": "INCLUDE Project: Transformative Research Awards for Down syndrome (R01 Clinical Trial Not Allowed) (RFA-OD-27-004)",
-      "org": "National Institutes of Health",
-      "description": "The NIH INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromE (INCLUDE) Project seeks to improve health and quality-of-life for individuals with Down syndrome. The purpose of this Notice of Funding Opportunity (NOFO) is to solicit Transformative Research Award a…",
-      "amount": {
-        "max": 500000,
-        "currency": "USD"
-      },
-      "deadline": "2028-06-15",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/360654",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-OD-27-003",
-      "kind": "grant",
-      "region": "US",
-      "name": "INCLUDE Project: Exploratory/Developmental Research Awards for Down syndrome (R21 Clinical Trial Not Allowed) (RFA-OD-27-003)",
-      "org": "National Institutes of Health",
-      "description": "The NIH INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromE (INCLUDE) Project seeks to improve health and quality-of-life for individuals with Down syndrome. This Notice of Funding Opportunity (NOFO) invites researchers to submit applications for support of ne…",
-      "amount": {
-        "max": 200000,
-        "currency": "USD"
-      },
-      "deadline": "2028-06-15",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/360653",
       "source": "grants.gov",
       "firstSeen": "2026-08-05"
     },
@@ -922,237 +601,299 @@
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "institutional (not SBIR)"
       ],
       "url": "https://www.grants.gov/search-results-detail/363255",
       "source": "grants.gov",
       "firstSeen": "2026-08-05"
     },
     {
-      "id": "gg-HT9425-23-S-SOC1",
+      "id": "gg-FOR-CA-25-086",
       "kind": "grant",
       "region": "US",
-      "name": "BROAD AGENCY ANNOUNCEMENT (BAA) for Extramural Biomedical and Human Performance Research and Development Department of Defense (HT9425-23-S-SOC1)",
-      "org": "Defense Health Agency Contracting Activity - DHACA",
-      "description": "The FY23 -FY28 Broad Agency Announcement for Extramural Biomedical Research and Development - HT9425-23-S-SOC1.",
-      "amount": {
-        "min": 750000,
-        "max": 50000000,
-        "currency": "USD"
-      },
-      "deadline": "2028-07-31",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/349586",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-27-011",
-      "kind": "grant",
-      "region": "US",
-      "name": "Single-Site Investigator-Initiated Clinical Trials (R61/R33 Clinical Trial Required) (PAR-27-011)",
+      "name": "Forecast to Publish a Notice of Funding Opportunity for SBIR Phase IIB Bridge Awards to Accelerate the Development of Cancer-Relevant Technologies Toward Commercialization (R44 Clinical Trial Optional) (FOR-CA-25-086)",
       "org": "National Institutes of Health",
-      "description": "This Notice of Funding Opportunity (NOFO) supports applications to develop and conduct investigator-initiated single site clinical trials including efficacy, comparative effectiveness, pragmatic and/or dissemination and implementation science clinical trials. Trials using innovative designs such …",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2028-11-02",
+      "deadlineNote": "Forecasted — dates may change",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/358850",
+      "url": "https://www.grants.gov/search-results-detail/359726",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
     },
     {
-      "id": "gg-PAR-27-013",
+      "id": "gg-TEMP-30794",
       "kind": "grant",
       "region": "US",
-      "name": "Data Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative U24 Clinical Trial Required) (PAR-27-013)",
+      "name": "NIEHS Worker Training Program&rsquo;s SBIR E-Learning for HAZMAT and Emergency Response (R43/R44 Clinical Trial Not Allowed) (TEMP-30794)",
       "org": "National Institutes of Health",
-      "description": "This Notice of Funding Opportunity (NOFO) supports applications for a collaborating Data Coordinating Center (DCC) for investigator-initiated multi-site clinical trials including efficacy, comparative effectiveness, pragmatic and/or implementation research clinical trials. Trials using innovative…",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2028-11-02",
+      "deadlineNote": "Forecasted — dates may change",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/358938",
+      "url": "https://www.grants.gov/search-results-detail/358912",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
     },
     {
-      "id": "gg-PAR-27-012",
+      "id": "gg-PA-27-101",
       "kind": "grant",
       "region": "US",
-      "name": "Clinical Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required) (PAR-27-012)",
+      "name": "NIH Small Business Innovation Research (SBIR) Phase IIB Strategic Breakthrough Award (Parent [R44] Clinical Trial Optional) (PA-27-101)",
       "org": "National Institutes of Health",
-      "description": "This Notice of Funding Opportunity (NOFO) supports applications to develop and conduct a Clinical Coordinating Center (CCC) for investigator-initiated multi-site clinical trials including efficacy, comparative effectiveness, pragmatic and/or dissemination and implementation science clinical trial…",
+      "description": "The NIH Phase IIB Strategic Breakthrough award bridges the funding gap between the end of a Small Business Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Phase II award and commercialization. The Phase IIB Strategic Breakthrough provides previously funded NIH SBIR or STT…",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2028-11-02",
+      "deadline": "2029-04-05",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/358851",
+      "url": "https://www.grants.gov/search-results-detail/359758",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
     },
     {
-      "id": "gg-PA-FPH-27-001",
+      "id": "gg-PAR-27-098",
       "kind": "grant",
       "region": "US",
-      "name": "Title X Family Planning Services Grants (PA-FPH-27-001)",
-      "org": "Office of the Assistant Secretary for Health",
-      "description": "The Office of Population Affairs (OPA) announces the anticipated availability of funds for Fiscal Year (FY) 2027 grants under the authority of Title X of the Public Health Service Act, Section 1001 (42 U.S.C. §300).This notice solicits applications for projects to provide Title X services through…",
-      "amount": {
-        "min": 200000,
-        "max": 22000000,
-        "currency": "USD"
-      },
-      "deadline": "2027-01-11",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/361754",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-RFA-OD-27-006",
-      "kind": "grant",
-      "region": "US",
-      "name": "Maximizing the Scientific Value of Data Generated by the Environmental influences on Child Health Outcomes (ECHO) Program: Dissertation Grant (R36 - Clinical Trial Not Allowed) (RFA-OD-27-006)",
+      "name": "SBIR/STTR Commercialization Readiness Pilot (CRP) Program (Parent SB1 Clinical Trial Optional) (PAR-27-098)",
       "org": "National Institutes of Health",
-      "description": "The goal of this NOFO is to support doctoral candidates studying high-priority areas of child health for the completion of their doctoral dissertation research project. This NOFO seeks to advance research in child health by stimulating the use of Environmental Influences on Child Health (ECHO) Co…",
+      "description": "The Commercialization Readiness Pilot (CRP) program helps small business concerns (SBCs) move NIH-funded SBIR or STTR projects from late-stage development to commercialization. The CRP supports later-stage research and development (R&D) and/or technical assistance that Phase II and Phase IIB Stra…",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2026-10-15",
+      "deadline": "2029-04-05",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/359149",
+      "url": "https://www.grants.gov/search-results-detail/359669",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
     },
     {
-      "id": "gg-RFA-OD-27-008",
+      "id": "gg-FOR-CA-25-087",
       "kind": "grant",
       "region": "US",
-      "name": "Maximizing the Scientific Value of Data Generated by the Environmental Influences on Child Health Outcomes (ECHO) Program: Ruth L. Kirschstein National Research Service Award (NRSA) Individual Postdoctoral Fellowship (F32) (RFA-OD-27-008)",
+      "name": "Forecast to Publish a Notice of Funding Opportunity for Small Business Transition Grant For Early Career Scientists (R41/R42 Clinical Trial Not Allowed) (FOR-CA-25-087)",
       "org": "National Institutes of Health",
-      "description": "This NOFO seeks to advance research and training in high-priority areas of child health by stimulating the use of Environmental Influences on Child Health Outcomes (ECHO) Cohort data by postdoctoral fellows from relevant scientific disciplines. This RFA will provide opportunities for fellows to s…",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2026-12-02",
+      "deadlineNote": "Forecasted — dates may change",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/359150",
+      "url": "https://www.grants.gov/search-results-detail/359724",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
     },
     {
-      "id": "gg-HT942526ERPLRA",
+      "id": "gg-PAR-27-039",
       "kind": "grant",
       "region": "US",
-      "name": "DoW Epilepsy Leveraging Research Award (HT942526ERPLRA)",
-      "org": "Defense Health Agency Contracting Activity - DHACA",
-      "description": "Summary: The intent of the fiscal year 2026 (FY26) Epilepsy Research Program (ERP) Leveraging Research Award is to support basic, translational and/or clinical research that repurposes or expands existing research resources to accelerate the understanding of post-traumatic epilepsy (PTE) and asso…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2026-08-17",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/362519",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-USDA-NIFA-AFRI-011134",
-      "kind": "grant",
-      "region": "US",
-      "name": "Agriculture and Food Research Initiative Competitive Grants Program Foundational and Applied Science Program (USDA-NIFA-AFRI-011134)",
-      "org": "National Institute of Food and Agriculture",
-      "description": "The AFRI Foundational and Applied Science Program supports grants in six AFRI priority areas to advance knowledge in both fundamental and applied sciences important to agriculture. The six priority areas are: Plant Health and Production and Plant Products; Animal Health and Production and Animal …",
-      "amount": {
-        "min": 10000,
-        "max": 10000000,
-        "currency": "USD"
-      },
-      "deadline": "2026-12-31",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/360205",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-HT942526NFRPEHDA",
-      "kind": "grant",
-      "region": "US",
-      "name": "DoW Neurofibromatosis Exploration-Hypothesis Development Award (HT942526NFRPEHDA)",
-      "org": "Defense Health Agency Contracting Activity - DHACA",
-      "description": "Summary: The fiscal year 2026 (FY26) Neurofibromatosis Research Program (NFRP) Exploration-Hypothesis Development Award (EHDA) supports the initial exploration of innovative, high-risk, high-gain, and potentially groundbreaking concepts in neurofibromatosis (NF) research. Studies supported by thi…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2026-09-22",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/362976",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-05"
-    },
-    {
-      "id": "gg-PAR-27-073",
-      "kind": "grant",
-      "region": "US",
-      "name": "Research Opportunities in Cancer Epidemiology Cohort Studies (U01 Clinical Trial Not Allowed) (PAR-27-073)",
+      "name": "Small Business Transition Grant for New Entrepreneurs (Parent R43/R44 Clinical Trial Optional) (PAR-27-039)",
       "org": "National Institutes of Health",
-      "description": "Through this Notice of Funding Opportunity (NOFO), the National Cancer Institute (NCI) encourages grant applications to support research in cancer epidemiology cohort studies that address specific knowledge gaps in cancer etiology and survivorship. Applications should include hypothesis-based res…",
+      "description": "Forecasted opportunity. Auto-captured from Grants.gov — open the official page for the full synopsis.",
       "amount": {
         "currency": "USD"
       },
-      "deadline": "2029-07-05",
+      "deadlineNote": "Forecasted — dates may change",
       "dilutive": false,
       "equityNote": "Non-dilutive federal grant",
       "focus": [
-        "auto-discovered"
+        "auto-discovered",
+        "small business eligible"
       ],
-      "url": "https://www.grants.gov/search-results-detail/359091",
+      "url": "https://www.grants.gov/search-results-detail/362576",
       "source": "grants.gov",
-      "firstSeen": "2026-08-05"
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "gg-PA-27-102",
+      "kind": "grant",
+      "region": "US",
+      "name": "NIH Small Business Technology Transfer Grant (Parent STTR [R41/R42] Clinical Trial Optional) (PA-27-102)",
+      "org": "National Institutes of Health",
+      "description": "The Small Business Technology Transfer (STTR) grant program helps United States small business concerns (SBCs) that partner with a nonprofit research institution bring scientific innovations to the marketplace. The STTR program supports feasibility studies to later stage research and development …",
+      "amount": {
+        "currency": "USD"
+      },
+      "deadline": "2027-04-05",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/359757",
+      "source": "grants.gov",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-13pao87",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-07-31 SBIR計畫推廣說明會(線上場)",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2278-14829",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-1up7vnb",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-07-28 2026 潛力新創選拔Hi-Po Star 獲選名單",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2275-14871",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-1up7vlk",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-07-20 小型企業創新研發計畫(SBIR) 115年度7月份決審會議核定名單",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2275-14850",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-1up7vky",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-07-20 公告115年度「提升中小企業智慧化經營效能計畫」、「中小微企業數位轉型計畫」工服輔導案申請通過核定名單",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2275-14849",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-1up7uxl",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-06-30 公告「2026 輔導推進（Propel）第九期」決審名單",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2275-14785",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-aci4is",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-08-07 串聯高齡照護場域 助新創企業打造智慧健康照護生態系",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2276-14927",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
+    },
+    {
+      "id": "tw-ann-aci3we",
+      "kind": "grant",
+      "region": "TW",
+      "name": "2026-07-29 中企署TAcc+加速器培育604家新創 協助募資突破110億元 成果發表會展現臺灣創新能量",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2276-14877",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-08-07"
     }
   ]
 }
