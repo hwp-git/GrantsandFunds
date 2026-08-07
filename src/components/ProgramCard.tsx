@@ -71,7 +71,8 @@ export function ProgramCard({ program: p, userState, onUpdate }: Props) {
             <option key={s.id} value={s.id}>{s.label}</option>
           ))}
         </select>
-        <a className="link-btn" href={p.url} target="_blank" rel="noreferrer">
+        {/* Follow a redirect the link check actually observed — never a guess. */}
+        <a className="link-btn" href={p.linkFinalUrl ?? p.url} target="_blank" rel="noreferrer">
           Official page ↗
         </a>
       </div>
