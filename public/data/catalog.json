@@ -165,8 +165,7 @@
         "currency": "USD",
         "note": "Standard deal"
       },
-      "deadline": "2026-08-25",
-      "deadlineNote": "Winter 2027 batch application deadline (est.)",
+      "deadlineNote": "Batch deadlines change each cycle — verify on YC site",
       "dilutive": true,
       "equityNote": "7% equity + MFN SAFE",
       "stage": [
@@ -181,7 +180,6 @@
       "url": "https://www.ycombinator.com/apply",
       "firstSeen": "2026-05-12",
       "source": "curated",
-      "deadlineConfidence": "estimated",
       "linkStatus": "ok",
       "linkCheckedAt": "2026-08-09"
     },
