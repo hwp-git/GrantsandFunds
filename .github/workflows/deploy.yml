@@ -5,6 +5,13 @@ name: Deploy site
 on:
   push:
     branches: [claude/grants-vc-funding-tracker-3d1w9b]
+  # The sync job's commits are made with the default GITHUB_TOKEN, and GitHub
+  # deliberately excludes GITHUB_TOKEN-authored pushes from re-triggering
+  # push-triggered workflows (anti-recursion). Without this, the site never
+  # picks up the daily catalog updates. workflow_run isn't gated that way.
+  workflow_run:
+    workflows: [Daily source sync]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -19,8 +26,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # For workflow_run, only proceed if the sync run itself succeeded (or was
+    # skipped because nothing changed) — not if it errored outright.
+    if: >
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success' ||
+      github.event.workflow_run.conclusion == 'skipped'
     steps:
       - uses: actions/checkout@v4
+        with:
+          # workflow_run always targets the default branch unless told
+          # otherwise; pin to the branch the sync actually ran on.
+          ref: ${{ github.event.workflow_run.head_branch || github.ref }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
