@@ -24,7 +24,9 @@ export function PipelineView({ programs, getUserState, onUpdate, onOpenProject }
   return (
     <div className="pipeline">
       {PIPELINE_STAGES.map((stage) => {
-        const items = tracked.filter((p) => getUserState(p.id).stage === stage.id)
+        const items = tracked
+          .filter((p) => getUserState(p.id).stage === stage.id)
+          .sort((a, b) => Number(getUserState(b.id).starred) - Number(getUserState(a.id).starred))
         return (
           <div key={stage.id} className="pipeline-col">
             <div className="pipeline-col-head">
@@ -32,8 +34,11 @@ export function PipelineView({ programs, getUserState, onUpdate, onOpenProject }
             </div>
             {items.map((p) => {
               const us = getUserState(p.id)
+              const cls = ['pipeline-card', us.starred ? 'card-starred' : '', us.stage === 'passed' ? 'card-passed' : '']
+                .filter(Boolean)
+                .join(' ')
               return (
-                <div key={p.id} className="pipeline-card">
+                <div key={p.id} className={cls}>
                   <div className="pipeline-card-title">
                     {us.starred && <span className="mini-star">★</span>}
                     {p.name}

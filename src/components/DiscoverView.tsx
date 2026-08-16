@@ -19,6 +19,7 @@ export function DiscoverView({ programs, kind, region, getUserState, onUpdate }:
   const [nonDilutiveOnly, setNonDilutiveOnly] = useState(false)
   const [starredOnly, setStarredOnly] = useState(false)
   const [newOnly, setNewOnly] = useState(false)
+  const [showPassed, setShowPassed] = useState(true)
 
   const visible = useMemo(() => {
     const q = search.trim().toLowerCase()
@@ -27,6 +28,7 @@ export function DiscoverView({ programs, kind, region, getUserState, onUpdate }:
       .filter((p) => !nonDilutiveOnly || !p.dilutive)
       .filter((p) => !starredOnly || getUserState(p.id).starred)
       .filter((p) => !newOnly || isNew(p.firstSeen))
+      .filter((p) => showPassed || getUserState(p.id).stage !== 'passed')
       .filter((p) => {
         if (deadlineFilter === 'all') return true
         if (deadlineFilter === 'rolling') return !p.deadline
@@ -42,7 +44,13 @@ export function DiscoverView({ programs, kind, region, getUserState, onUpdate }:
             .some((t) => t!.toLowerCase().includes(q)),
       )
       .sort((a, b) => {
-        // NEW items first, then nearest deadline, rolling last
+        // Starred first, then passed/declined last, then NEW, then nearest deadline
+        const as = getUserState(a.id).starred ? 0 : 1
+        const bs = getUserState(b.id).starred ? 0 : 1
+        if (as !== bs) return as - bs
+        const ap = getUserState(a.id).stage === 'passed' ? 1 : 0
+        const bp = getUserState(b.id).stage === 'passed' ? 1 : 0
+        if (ap !== bp) return ap - bp
         const an = isNew(a.firstSeen) ? 0 : 1
         const bn = isNew(b.firstSeen) ? 0 : 1
         if (an !== bn) return an - bn
@@ -50,7 +58,7 @@ export function DiscoverView({ programs, kind, region, getUserState, onUpdate }:
         const bd = b.deadline ? daysUntil(b.deadline) : Infinity
         return ad - bd
       })
-  }, [programs, kind, region, search, deadlineFilter, nonDilutiveOnly, starredOnly, newOnly, getUserState])
+  }, [programs, kind, region, search, deadlineFilter, nonDilutiveOnly, starredOnly, newOnly, showPassed, getUserState])
 
   return (
     <div>
@@ -78,6 +86,10 @@ export function DiscoverView({ programs, kind, region, getUserState, onUpdate }:
         <label className="check">
           <input type="checkbox" checked={starredOnly} onChange={(e) => setStarredOnly(e.target.checked)} />
           ★ Starred
+        </label>
+        <label className="check">
+          <input type="checkbox" checked={showPassed} onChange={(e) => setShowPassed(e.target.checked)} />
+          Show passed/declined
         </label>
       </div>
 

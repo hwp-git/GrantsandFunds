@@ -11,8 +11,17 @@ interface Props {
 
 export function ProgramCard({ program: p, userState, onUpdate }: Props) {
   const money = formatMoney(p.amount)
+  const passed = userState.stage === 'passed'
+  const cls = [
+    'card',
+    userState.stage !== 'none' && !passed ? 'card-tracked' : '',
+    userState.starred ? 'card-starred' : '',
+    passed ? 'card-passed' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
   return (
-    <div className={`card ${userState.stage !== 'none' ? 'card-tracked' : ''}`}>
+    <div className={cls}>
       <div className="card-head">
         <div className="card-title">
           <h3>
