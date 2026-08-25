@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-08-24T21:23:08.642Z",
+  "lastSynced": "2026-08-25T21:21:55.827Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -32,7 +32,7 @@
       "source": "curated",
       "deadlineConfidence": "verified",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "nih-sttr",
@@ -62,7 +62,7 @@
       "source": "curated",
       "deadlineConfidence": "verified",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "nsf-sbir",
@@ -92,7 +92,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "arpa-h-open-baa",
@@ -121,7 +121,7 @@
       "firstSeen": "2026-07-30",
       "source": "curated",
       "linkStatus": "broken",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "aasm-foundation",
@@ -150,7 +150,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "yc",
@@ -181,7 +181,7 @@
       "firstSeen": "2026-05-12",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "rock-health",
@@ -211,7 +211,7 @@
       "firstSeen": "2026-05-20",
       "source": "curated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "sosv-hax",
@@ -241,7 +241,7 @@
       "firstSeen": "2026-06-15",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "techstars-la-health",
@@ -273,7 +273,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "a16z-bio-health",
@@ -304,7 +304,7 @@
       "firstSeen": "2026-06-20",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "tw-sbir",
@@ -338,7 +338,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "nstc-fiti",
@@ -368,7 +368,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "tw-aplus",
@@ -398,7 +398,7 @@
       "firstSeen": "2026-06-10",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "tw-siir",
@@ -428,7 +428,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "tta",
@@ -460,7 +460,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "tss",
@@ -489,7 +489,7 @@
       "firstSeen": "2026-05-12",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "appworks",
@@ -523,7 +523,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "hspectrum",
@@ -557,7 +557,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "taiwania",
@@ -590,7 +590,7 @@
       "firstSeen": "2026-07-05",
       "source": "curated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-RFA-MH-27-140",
@@ -613,7 +613,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-PAR-24-330",
@@ -636,7 +636,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-FOR-CA-25-086",
@@ -659,7 +659,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-TEMP-30794",
@@ -682,7 +682,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-PA-27-101",
@@ -705,7 +705,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-PAR-27-098",
@@ -728,7 +728,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-FOR-CA-25-087",
@@ -751,7 +751,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-PAR-27-039",
@@ -774,7 +774,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
     },
     {
       "id": "gg-PA-27-102",
@@ -797,7 +797,29 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-08-24"
+      "linkCheckedAt": "2026-08-25"
+    },
+    {
+      "id": "tw-ann-x3047w",
+      "kind": "grant",
+      "region": "TW",
+      "name": "0822豪雨淹水慰助啟動,經濟部從優從速協助受災民眾及商家加速復原 補助範圍",
+      "org": "經濟部 (MOEA)",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.moea.gov.tw/../news/News.aspx?kind=1&amp;menu_id=40&amp;news_id=123731",
+      "source": "moea.gov.tw",
+      "firstSeen": "2026-08-25",
+      "linkStatus": "unverified",
+      "linkCheckedAt": "2026-08-25"
     }
   ]
 }
