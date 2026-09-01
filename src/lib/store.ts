@@ -67,5 +67,7 @@ export function useAppState() {
   const updateProject = (patch: Partial<AppState['project']>) =>
     setState((s) => ({ ...s, project: { ...s.project, ...patch } }))
 
-  return { state, getProgram, updateProgram, updateProject }
+  const replaceState = (next: AppState) => setState(next)
+
+  return { state, getProgram, updateProgram, updateProject, replaceState }
 }

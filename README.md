@@ -52,7 +52,28 @@ npm run sync:test   # offline run against scripts/fixtures/
 ```
 
 Auto-discovered amounts and deadlines come from the sources verbatim —
-verify on the official pages before relying on them. The user-state layer
-(`src/lib/store.ts`, localStorage) and the indicative FX rate
-(`src/lib/format.ts`) are the remaining pieces to move server-side if a
-backend is added.
+verify on the official pages before relying on them.
+
+## Data access — for AI agents/assistants reading this repo
+
+Two different things live in two different places:
+
+- **Program data** (`public/data/catalog.json`) — grants, VC/accelerator
+  programs, deadlines, link-check status. Static JSON, git-tracked, updated
+  daily by the sync workflow. Read it directly via the repo or a plain HTTP
+  fetch — no JS execution needed.
+- **User progress** (pipeline stage, starred, checklist, notes, activity log)
+  — lives **only in the browser's `localStorage`**, keyed `grantsandfunds:v1`.
+  It is never committed to this repo and the live site is a client-rendered
+  SPA, so a bare fetch of the page gets an empty shell, not this data.
+
+To get current progress: ask the user to click **Export status** in the app
+header. It downloads a self-contained JSON snapshot
+(`src/lib/portability.ts` → `buildSnapshot`) with a human/agent-readable
+`pipeline` array (program name, org, stage, deadline — no need to
+cross-reference the catalog) plus a `raw` block for exact re-import via the
+**Import** button. There is no live sync between the browser and this repo;
+treat any snapshot as a point-in-time read, not a subscription.
+
+The indicative FX rate (`src/lib/format.ts`) is the other piece to move
+server-side if a real backend is added later.

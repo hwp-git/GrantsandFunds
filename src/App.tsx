@@ -6,11 +6,12 @@ import { daysUntil, formatDate, isNew, urgency } from './lib/format'
 import { DiscoverView } from './components/DiscoverView'
 import { PipelineView } from './components/PipelineView'
 import { ProjectView } from './components/ProjectView'
+import { StatusSync } from './components/StatusSync'
 
 type View = 'discover' | 'pipeline' | 'project'
 
 export default function App() {
-  const { state, getProgram, updateProgram, updateProject } = useAppState()
+  const { state, getProgram, updateProgram, updateProject, replaceState } = useAppState()
   const { programs, lastSynced } = useCatalog()
   const [view, setView] = useState<View>('discover')
   const [kind, setKind] = useState<FundingKind>('grant')
@@ -57,8 +58,11 @@ export default function App() {
           </button>
         </nav>
 
-        <div className="sync-note" title="The daily sync job scans US & Taiwan sources and stamps new items">
-          Sources synced {formatDate(lastSynced.slice(0, 10))} · daily
+        <div className="topbar-right">
+          <div className="sync-note" title="The daily sync job scans US & Taiwan sources and stamps new items">
+            Sources synced {formatDate(lastSynced.slice(0, 10))} · daily
+          </div>
+          <StatusSync state={state} programs={programs} onImport={replaceState} />
         </div>
       </header>
 
