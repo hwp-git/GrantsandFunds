@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-03T00:06:30.386Z",
+  "lastSynced": "2026-10-03T23:28:20.653Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -868,28 +868,6 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-03"
-    },
-    {
-      "id": "tw-ann-x30mqe",
-      "kind": "grant",
-      "region": "TW",
-      "name": "離岸風電區塊開發第三期截止收件 共2件申請案參與選商",
-      "org": "經濟部 (MOEA)",
-      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
-      "amount": {
-        "currency": "TWD",
-        "note": "See announcement"
-      },
-      "dilutive": false,
-      "equityNote": "Non-dilutive government program",
-      "focus": [
-        "announcement"
-      ],
-      "url": "https://www.moea.gov.tw/../news/News.aspx?kind=1&amp;menu_id=40&amp;news_id=124121",
-      "source": "moea.gov.tw",
-      "firstSeen": "2026-10-01",
-      "linkStatus": "unverified",
       "linkCheckedAt": "2026-10-03"
     }
   ]
