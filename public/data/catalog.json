@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-14T00:04:23.764Z",
+  "lastSynced": "2026-10-14T23:36:16.512Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -868,6 +868,28 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
+      "linkCheckedAt": "2026-10-14"
+    },
+    {
+      "id": "tw-ann-1up8e1n",
+      "kind": "grant",
+      "region": "TW",
+      "name": "公告116年度經濟部中小及新創企業署「深科技驅動中小企業跨域創新計畫」企業跨域研發補助申請須知",
+      "org": "經濟部中小及新創企業署",
+      "description": "自動擷取的公告 — auto-captured announcement; open the linked page and verify details before acting.",
+      "amount": {
+        "currency": "TWD",
+        "note": "See announcement"
+      },
+      "dilutive": false,
+      "equityNote": "Non-dilutive government program",
+      "focus": [
+        "announcement"
+      ],
+      "url": "https://www.smes.moea.gov.tw/article-tw-2275-15216",
+      "source": "smes.moea.gov.tw",
+      "firstSeen": "2026-10-14",
+      "linkStatus": "unverified",
       "linkCheckedAt": "2026-10-14"
     }
   ]
