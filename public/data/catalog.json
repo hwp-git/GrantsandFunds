@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-20T00:04:27.579Z",
+  "lastSynced": "2026-10-20T23:35:26.279Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -867,6 +867,31 @@
       "url": "https://www.grants.gov/search-results-detail/359757",
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
+      "linkStatus": "ok",
+      "linkCheckedAt": "2026-10-20"
+    },
+    {
+      "id": "gg-SB-OEDSB-27-001",
+      "kind": "grant",
+      "region": "US",
+      "name": "FY27 Small Business Development Center State of Kansas Network Rebid (SB-OEDSB-27-001)",
+      "org": "Small Business Administration",
+      "description": "Eligible organizations, as defined in Section 3.2, may apply to SBA for an award of financial assistance under this Funding Opportunity to fund an SBDC Program. SBDC Programs deliver professional, high quality, individualized business advising and technical assistance to existing small businesses…",
+      "amount": {
+        "min": 777777,
+        "max": 1144946,
+        "currency": "USD"
+      },
+      "deadline": "2026-11-19",
+      "dilutive": false,
+      "equityNote": "Non-dilutive federal grant",
+      "focus": [
+        "auto-discovered",
+        "small business eligible"
+      ],
+      "url": "https://www.grants.gov/search-results-detail/364132",
+      "source": "grants.gov",
+      "firstSeen": "2026-10-20",
       "linkStatus": "ok",
       "linkCheckedAt": "2026-10-20"
     },
