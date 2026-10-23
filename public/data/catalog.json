@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-22T23:49:42.668Z",
+  "lastSynced": "2026-10-23T23:43:00.817Z",
   "programs": [
     {
       "id": "nih-sbir-omnibus",
@@ -32,7 +32,7 @@
       "source": "curated",
       "deadlineConfidence": "verified",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "nih-sttr",
@@ -62,7 +62,7 @@
       "source": "curated",
       "deadlineConfidence": "verified",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "nsf-sbir",
@@ -92,7 +92,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "arpa-h-open-baa",
@@ -121,7 +121,7 @@
       "firstSeen": "2026-07-30",
       "source": "curated",
       "linkStatus": "broken",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "aasm-foundation",
@@ -150,7 +150,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "yc",
@@ -181,7 +181,7 @@
       "firstSeen": "2026-05-12",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "rock-health",
@@ -211,7 +211,7 @@
       "firstSeen": "2026-05-20",
       "source": "curated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "sosv-hax",
@@ -241,7 +241,7 @@
       "firstSeen": "2026-06-15",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "techstars-la-health",
@@ -273,7 +273,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "a16z-bio-health",
@@ -304,7 +304,7 @@
       "firstSeen": "2026-06-20",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tw-sbir",
@@ -338,7 +338,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "nstc-fiti",
@@ -368,7 +368,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tw-aplus",
@@ -398,7 +398,7 @@
       "firstSeen": "2026-06-10",
       "source": "curated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tw-siir",
@@ -427,8 +427,8 @@
       "firstSeen": "2026-08-04",
       "source": "curated",
       "deadlineConfidence": "estimated",
-      "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkStatus": "broken",
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tta",
@@ -460,7 +460,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tss",
@@ -489,7 +489,7 @@
       "firstSeen": "2026-05-12",
       "source": "curated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "appworks",
@@ -523,7 +523,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "hspectrum",
@@ -557,7 +557,7 @@
       "source": "curated",
       "deadlineConfidence": "estimated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "taiwania",
@@ -590,30 +590,7 @@
       "firstSeen": "2026-07-05",
       "source": "curated",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
-    },
-    {
-      "id": "gg-RFA-MH-27-140",
-      "kind": "grant",
-      "region": "US",
-      "name": "Optimizing Behavioral Sleep Interventions for Adolescents and Young Adults (R34 Clinical Trial Required) (RFA-MH-27-140)",
-      "org": "National Institutes of Health",
-      "description": "NIMH seeks applications for pilot research to adapt, optimize, and test behavioral interventions that address common sleep problems in adolescents and young adults with or at risk for a mental health disorder. This notice of funding opportunity (NOFO) supports pilot clinical trials designed to ev…",
-      "amount": {
-        "currency": "USD"
-      },
-      "deadline": "2026-10-22",
-      "dilutive": false,
-      "equityNote": "Non-dilutive federal grant",
-      "focus": [
-        "auto-discovered",
-        "check eligibility"
-      ],
-      "url": "https://www.grants.gov/search-results-detail/359159",
-      "source": "grants.gov",
-      "firstSeen": "2026-08-07",
-      "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-PAR-24-330",
@@ -636,7 +613,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-FOR-CA-25-086",
@@ -659,7 +636,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-TEMP-30794",
@@ -682,7 +659,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-HHS-2027-ACL-NIDILRR-BISA-0308",
@@ -705,7 +682,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-09-25",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-HHS-2027-ACL-NIDILRR-BISB-0309",
@@ -728,7 +705,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-09-25",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-PA-27-101",
@@ -751,7 +728,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-PAR-27-098",
@@ -774,7 +751,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-FOR-CA-25-087",
@@ -797,7 +774,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-PAR-27-039",
@@ -820,7 +797,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-USDA-NIFA-SBIR-012221",
@@ -845,7 +822,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-10-02",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-PA-27-102",
@@ -868,7 +845,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-08-07",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "gg-DE-FOA-0003631",
@@ -893,7 +870,7 @@
       "source": "grants.gov",
       "firstSeen": "2026-10-21",
       "linkStatus": "ok",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tw-ann-13pb6sc",
@@ -915,7 +892,7 @@
       "source": "smes.moea.gov.tw",
       "firstSeen": "2026-10-20",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     },
     {
       "id": "tw-ann-1up8e1n",
@@ -937,7 +914,7 @@
       "source": "smes.moea.gov.tw",
       "firstSeen": "2026-10-14",
       "linkStatus": "unverified",
-      "linkCheckedAt": "2026-10-22"
+      "linkCheckedAt": "2026-10-23"
     }
   ]
 }
